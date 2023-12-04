@@ -1,0 +1,18 @@
+diff a/src/game/behaviors/switch_hidden_objects.inc.c b/src/game/behaviors/switch_hidden_objects.inc.c	(rejected hunks)
+@@ -58,7 +58,15 @@ void hidden_breakable_box_actions(void) {
+             o->oAction++;
+             cur_obj_play_sound_2(SOUND_GENERAL_BREAK_BOX);
+         }
+-        load_object_collision_model();
++        if (gMarioState->action != ACT_SLIDE_KICK_SLIDE)
++        {
++
++            load_object_collision_model();
++        }
++        else if (gMarioState->forwardVel < 20.0f)
++        {
++            load_object_collision_model();
++        }
+     } else {
+         cur_obj_become_intangible();
+         cur_obj_disable_rendering();

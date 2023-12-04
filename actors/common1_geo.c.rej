@@ -1,0 +1,10 @@
+diff a/actors/common1_geo.c b/actors/common1_geo.c	(rejected hunks)
+@@ -25,3 +25,7 @@
+ #include "white_particle/geo.inc.c"
+ #include "wooden_signpost/geo.inc.c"
+ #include "tree/geo.inc.c"
++
++#include "marios_wing_cap/geo.inc.c"
++#include "marios_metal_cap/geo.inc.c"
++#include "marios_winged_metal_cap/geo.inc.c"
+\ No newline at end of file

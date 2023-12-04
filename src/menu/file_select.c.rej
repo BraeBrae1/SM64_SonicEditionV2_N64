@@ -1,0 +1,78 @@
+diff a/src/menu/file_select.c b/src/menu/file_select.c	(rejected hunks)
+@@ -158,6 +158,9 @@ static unsigned char textMarioB[] = { TEXT_FILE_MARIO_B };
+ static unsigned char textMarioC[] = { TEXT_FILE_MARIO_C };
+ static unsigned char textMarioD[] = { TEXT_FILE_MARIO_D };
+ 
++static unsigned char textHealthM[] = { TEXT_MARIO_HEALTH_FILE };
++static unsigned char textHealthS[] = { TEXT_SONIC_HEALTH_FILE };
++
+ #ifndef VERSION_EU
+ static unsigned char textNew[] = { TEXT_NEW };
+ static unsigned char starIcon[] = { GLYPH_STAR, GLYPH_SPACE };
+@@ -1616,6 +1619,17 @@ void bhv_menu_button_manager_loop(void) {
+  * If the cursor is clicked, sClickPos uses the same value as sCursorPos.
+  */
+ void handle_cursor_button_input(void) {
++    if (gPlayer3Controller->buttonPressed & Z_TRIG) {
++    if (gDialogHealthSystem == MARIO_HEALTH) {
++        gDialogHealthSystem = SONIC_HEALTH; 
++        play_sound(SOUND_GENERAL_RINGLOSS, gGlobalSoundSource);
++    }
++    else
++    {
++        gDialogHealthSystem = MARIO_HEALTH;
++        play_sound(SOUND_GENERAL_HEART_SPIN, gGlobalSoundSource);
++    }
++}
+     // If scoring a file, pressing A just changes the coin score mode.
+     if (sSelectedButtonID == MENU_BUTTON_SCORE_FILE_A || sSelectedButtonID == MENU_BUTTON_SCORE_FILE_B
+         || sSelectedButtonID == MENU_BUTTON_SCORE_FILE_C
+@@ -1792,7 +1806,7 @@ void print_save_file_star_count(s8 fileIndex, s16 x, s16 y) {
+     #define MARIOTEXT_X1 92
+     #define MARIOTEXT_X2 207
+ #elif defined(VERSION_US)
+-    #define SELECT_FILE_X 93
++#define SELECT_FILE_X 50
+     #define SCORE_X 52
+     #define COPY_X 117
+     #define ERASE_X 177
+@@ -1820,6 +1834,29 @@ void print_main_menu_strings(void) {
+     // The current sound mode is automatically centered on US and Shindou.
+     static s16 sSoundTextX; // TODO: There should be a way to make this match on both US and Shindou.
+ #endif
++
++    if (gDialogHealthSystem == MARIO_HEALTH) {
++        gSPDisplayList(gDisplayListHead++, dl_menu_ia8_text_begin);
++        gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, sTextBaseAlpha);
++
++        print_menu_generic_string(193, 41, textHealthM);
++
++
++        gSPDisplayList(gDisplayListHead++, dl_menu_ia8_text_end);
++
++
++    }
++    else
++    {
++        gSPDisplayList(gDisplayListHead++, dl_menu_ia8_text_begin);
++        gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, sTextBaseAlpha);
++
++        print_menu_generic_string(193, 41, textHealthS);
++
++        gSPDisplayList(gDisplayListHead++, dl_menu_ia8_text_end);
++
++    }
++
+     // Print "SELECT FILE" text
+     gSPDisplayList(gDisplayListHead++, dl_rgba16_text_begin);
+     gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, sTextBaseAlpha);
+@@ -1951,6 +1988,9 @@ void print_score_menu_strings(void) {
+     s16 centeredX;
+ #endif
+ 
++   
++
++
+     // Update and print the message at the top of the menu.
+     if (sMainMenuTimer == FADEOUT_TIMER) {
+         sFadeOutText = TRUE;

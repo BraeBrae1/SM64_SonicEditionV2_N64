@@ -1,0 +1,9 @@
+diff a/actors/group3.h b/actors/group3.h	(rejected hunks)
+@@ -38,4 +38,7 @@ extern const GeoLayout water_bomb_shadow_geo[];
+ extern const Gfx water_bubble_seg5_dl_05010D30[];
+ extern const Gfx water_bubble_seg5_dl_05011000[];
+ 
++
++
++
+ #endif

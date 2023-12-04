@@ -1,0 +1,12 @@
+diff a/src/game/behaviors/ukiki.inc.c b/src/game/behaviors/ukiki.inc.c	(rejected hunks)
+@@ -28,9 +28,7 @@ void handle_cap_ukiki_reset(void) {
+  */
+ s32 is_cap_ukiki_and_mario_has_normal_cap_on_head(void) {
+     if (o->oBehParams2ndByte == UKIKI_CAP) {
+-        if (does_mario_have_normal_cap_on_head(gMarioState)) {
+-            return TRUE;
+-        }
++        
+     }
+ 
+     return FALSE;

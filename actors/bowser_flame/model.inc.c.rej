@@ -1,0 +1,16 @@
+diff a/actors/bowser_flame/model.inc.c b/actors/bowser_flame/model.inc.c	(rejected hunks)
+@@ -78,10 +78,10 @@ static const Vtx flame_seg6_vertex_0601C000[] = {
+     {{{   150,    150,      0}, 0, {  2016,    992}, {0xff, 0xff, 0xff, 0xff}}},
+     {{{   150,    300,      0}, 0, {  2016,      0}, {0xff, 0xff, 0xff, 0xff}}},
+     {{{  -150,    300,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
+-    {{{  -150,      0,      0}, 0, {     0,    992}, {0xff, 0xff, 0xff, 0xff}}},
+-    {{{   150,      0,      0}, 0, {  2016,    992}, {0xff, 0xff, 0xff, 0xff}}},
+-    {{{   150,    150,      0}, 0, {  2016,      0}, {0xff, 0xff, 0xff, 0xff}}},
+-    {{{  -150,    150,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
++    {{{  -150,      0,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
++    {{{   150,      0,      0}, 0, {  2016,   2016}, {0xff, 0xff, 0xff, 0xff}}},
++    {{{   150,    150,      0}, 0, {  2016,    992}, {0xff, 0xff, 0xff, 0xff}}},
++    {{{  -150,    150,      0}, 0, {     0,    992}, {0xff, 0xff, 0xff, 0xff}}},
+ };
+ 
+ // 0x0601C080 - 0x0601C0B0

@@ -1,0 +1,16 @@
+extern void scroll_chaos0_000_offset_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_001_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_displaylist_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_003_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_004_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_displaylist_003_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_006_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_007_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_displaylist_004_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_009_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_010_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_011_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_012_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_offset_013_mesh_layer_1_vtx_0();
+extern void scroll_chaos0_000_displaylist_005_mesh_layer_1_vtx_0();
+extern void scroll_actor_geo_chaos0();

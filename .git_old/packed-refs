@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled sorted 
+1372ae1bb7cbedc03df366393188f4f05dcfc422 refs/remotes/origin/master
+cc32c6faa91a20e7c506c47351f9a380c8066be3 refs/tags/irix
+b333dd0a96e568cf62bd16099d43f6cb68383d7f refs/tags/irix2

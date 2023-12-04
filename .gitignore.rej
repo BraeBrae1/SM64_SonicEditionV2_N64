@@ -1,0 +1,40 @@
+diff a/.gitignore b/.gitignore	(rejected hunks)
+@@ -61,8 +61,38 @@ build/*
+ !/levels/**/*custom*.png
+ !/levels/**/*custom*/**/*.png
+ !/actors/**/*custom*.png
++!/actors/**/*rainbow*.png
++!/actors/**/*stored*.png
++!/actors/**/*mario*.png
++!/levels/intro/header.h
++!/levels/intro/leveldata.c
++!/levels/intro/leveldata.c
++!/levels/intro/script.c
++!/levels/ending/*cake*.png
++!/actors/**/*wing*.png
++!/actors/**/*cursya*.png
++!/actors/**/*skipsqueak*.png
++!/actors/**/*sonic*.png
++!/actors/**/*metal*.png
++!/actors/**/*super*.png
++!/actors/**/*reticle*.png
++!/sound/**/*sound*.png
++
++!/textures/**/segment2.10458.ia8.png
++!/textures/**/segment2.05A00.rgba16.png
+ !/actors/**/*custom*/**/*.png
++!/actors/**/*emerald*.png
++!/textures/**/*meta*.png
++!/textures/**/*emerald*.png
++!/sound/**/*drown*.m64
++!/sound/**/*super*.m64
++!/sound/**/*emerald*.m64
++!/textures/**/*mario*.png
+ !/textures/**/*custom*.png
++!/textures/**/*rainbow*.png
++!/textures/**/*cursya*.png
++!/textures/**/*skipsqueak*.png
++!/textures/**/*curseya*.png
+ !/textures/**/*custom*/**/*.png
+ !/sound/**/*custom*.m64
+ !/sound/**/*custom*/**/*.m64

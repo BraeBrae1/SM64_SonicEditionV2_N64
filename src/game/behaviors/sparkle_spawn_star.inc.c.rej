@@ -1,0 +1,20 @@
+diff a/src/game/behaviors/sparkle_spawn_star.inc.c b/src/game/behaviors/sparkle_spawn_star.inc.c	(rejected hunks)
+@@ -111,7 +111,18 @@ void bhv_spawned_star_loop(void) {
+ }
+ 
+ void bhv_spawn_star_no_level_exit(u32 sp20) {
++
+     struct Object *sp1C = spawn_object(o, MODEL_STAR, bhvSpawnedStarNoLevelExit);
++
++    sp1C->oBehParams = sp20 << 24;
++    sp1C->oInteractionSubtype = INT_SUBTYPE_NO_EXIT;
++    obj_set_angle(sp1C, 0, 0, 0);
++}
++
++void bhv_spawn_emerald_no_level_exit(u32 sp20, u32 col) {
++ 
++    struct Object* sp1C = spawn_object(o, MODEL_EMERALD, bhvSpawnedStarNoLevelExit);
++    sp1C->oAnimState = col;
+     sp1C->oBehParams = sp20 << 24;
+     sp1C->oInteractionSubtype = INT_SUBTYPE_NO_EXIT;
+     obj_set_angle(sp1C, 0, 0, 0);

@@ -1,0 +1,14 @@
+diff a/src/game/behaviors/boo.inc.c b/src/game/behaviors/boo.inc.c	(rejected hunks)
+@@ -357,7 +357,11 @@ static void boo_chase_mario(f32 a0, s16 a1, f32 a2) {
+         }
+ 
+         cur_obj_set_vel_from_mario_vel(10.0f - o->oBooNegatedAggressiveness, a2);
+-
++        //boo sonic fix
++        if (o->oForwardVel >= 10.0f)
++        {
++            o->oForwardVel = 10.0f;
++        }
+         if (o->oForwardVel != 0.0f) {
+             boo_oscillate(FALSE);
+         }

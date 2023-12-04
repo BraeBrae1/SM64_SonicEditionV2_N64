@@ -1,0 +1,7 @@
+diff a/src/game/obj_behaviors.c b/src/game/obj_behaviors.c	(rejected hunks)
+@@ -852,3 +852,5 @@ s8 UNUSED debug_sequence_tracker(s16 debugInputSequence[]) {
+ #include "behaviors/treasure_chest.inc.c"
+ #include "behaviors/mips.inc.c"
+ #include "behaviors/yoshi.inc.c"
++#include "behaviors/reticle.inc.c"
++#include "behaviors/emerald_circle.inc.c"

@@ -1,0 +1,16 @@
+diff a/actors/common1.h b/actors/common1.h	(rejected hunks)
+@@ -250,4 +250,14 @@ extern const Gfx wooden_signpost_seg3_dl_0302DCD0[];
+ extern const Gfx wooden_signpost_seg3_dl_0302DD08[];
+ extern const Collision wooden_signpost_seg3_collision_0302DD80[];
+ 
++#include "marios_wing_cap/geo_header.h"
++
++#include "marios_metal_cap/geo_header.h"
++
++
++
++#include "marios_winged_metal_cap/geo_header.h"
++
++#include "mario_cap/geo_header.h"
++
+ #endif

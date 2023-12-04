@@ -1,0 +1,18 @@
+diff a/levels/intro/header.h b/levels/intro/header.h	(rejected hunks)
+@@ -14,6 +14,16 @@ extern const Gfx intro_seg7_dl_0700B3A0[];
+ extern const Gfx intro_seg7_dl_0700C6A0[];
+ extern const f32 intro_seg7_table_0700C790[];
+ extern const f32 intro_seg7_table_0700C880[];
++extern Vtx titlesonic_Text_mesh_vtx_0[1426];
++extern Gfx titlesonic_Text_mesh_tri_0[];
++extern Vtx titlesonic_Text_mesh_vtx_1[638];
++extern Gfx titlesonic_Text_mesh_tri_1[];
++
++
++
++//extern Gfx titlesonic_Text_mesh[];
++
++
+ 
+ // script
+ extern const LevelScript level_intro_entry_1[];

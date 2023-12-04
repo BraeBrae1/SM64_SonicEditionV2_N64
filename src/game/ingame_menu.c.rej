@@ -1,0 +1,70 @@
+diff a/src/game/ingame_menu.c b/src/game/ingame_menu.c	(rejected hunks)
+@@ -22,6 +22,7 @@
+ #include "sm64.h"
+ #include "text_strings.h"
+ #include "types.h"
++#include "macros.h"
+ 
+ u16 gDialogColorFadeTimer;
+ s8 gLastDialogLineNum;
+@@ -1656,6 +1657,7 @@ s16 gCutsceneMsgDuration = -1;
+ s16 gCutsceneMsgTimer = 0;
+ s8 gDialogCameraAngleIndex = CAM_SELECTION_MARIO;
+ s8 gDialogCourseActNum = 1;
++s8 gDialogHealthSystem = MARIO_HEALTH;
+ 
+ #if defined(VERSION_JP) || defined(VERSION_SH)
+ #define DIAG_VAL1 20
+@@ -2596,8 +2598,32 @@ s32 gCourseDoneMenuTimer = 0;
+ s32 gCourseCompleteCoins = 0;
+ s8 gHudFlash = 0;
+ 
++void change_dialog_mario_health(void) {
++
++    if (gPlayer3Controller->buttonPressed & B_BUTTON) 
++    {
++        play_sound(SOUND_MENU_CHANGE_SELECT, gGlobalSoundSource);
++        if (gDialogHealthSystem == SONIC_HEALTH) {
++            gDialogHealthSystem = MARIO_HEALTH;
++        } 
++        else 
++        {
++            gDialogHealthSystem = SONIC_HEALTH;
++        }
++    }
++}
++
++
++
++
+ s16 render_pause_courses_and_castle(void) {
+     s16 num;
++    
++    u8 textHealthMario[] = { TEXT_HEALTH_MARIO };
++    u8 textHealthSonic[] = { TEXT_HEALTH_SONIC };
++
++
++    change_dialog_mario_health();
+ 
+ #ifdef VERSION_EU
+     gInGameLanguage = eu_get_language();
+@@ -2679,6 +2705,19 @@ s16 render_pause_courses_and_castle(void) {
+         gDialogTextAlpha += 25;
+     }
+ 
++    if (gDialogHealthSystem == MARIO_HEALTH) {
++        gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
++        print_generic_string(25, 170, textHealthMario);
++        gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
++
++    }
++    if (gDialogHealthSystem == SONIC_HEALTH) {
++        gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
++        print_generic_string(25, 170, textHealthSonic);
++        gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
++
++    }
++
+     return 0;
+ }
+ 

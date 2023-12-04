@@ -1,0 +1,43 @@
+diff a/include/model_ids.h b/include/model_ids.h	(rejected hunks)
+@@ -23,8 +23,20 @@
+ 
+ /* Global models that are loaded for every level */
+ 
+-#define MODEL_MARIO                       0x01        // mario_geo
+-#define MODEL_LUIGI                       0x02        // unused
++#define MODEL_MARIO 0x01             // mario_geo
++#define MODEL_LUIGI 0x02             // unused
++#define MODEL_WATER_BOMB 0xE2        // water_bomb_geo
++#define MODEL_WATER_BOMB_SHADOW 0xE3 // water_bomb_shadow_geo
++#define MODEL_SONIC_BALL 0xE4        // sonic_ball_geo
++#define MODEL_SONIC_TRAIL 0xE5       // sonic_trail_geo
++#define MODEL_SUPER_SONIC 0xE6       // sonic_trail_geo
++#define MODEL_SUPER_BALL 0xE7        // sonic_trail_geo
++#define MODEL_SUPER_TRAIL 0xE8       // sonic_trail_geo
++#define MODEL_RETICLE 0xE9       // sonic_trail_geo
++#define MODEL_EMERALD 0xF0       // sonic_trail_geo
++#define MODEL_EMERALD_CIRCLE 0xF1       // sonic_trail_geo
++
++
+ 
+ /* Various static level geometry, the geo layout differs but terrain object presets treat them the same.*/
+ 
+@@ -347,8 +359,7 @@
+ #define MODEL_BULLY_BOSS                  0x57        // bully_boss_geo
+ 
+ // group 3
+-#define MODEL_WATER_BOMB                  0x54        // water_bomb_geo
+-#define MODEL_WATER_BOMB_SHADOW           0x55        // water_bomb_shadow_geo
++
+ #define MODEL_KING_BOBOMB                 0x56        // king_bobomb_geo
+ 
+ // group 4
+@@ -492,7 +503,7 @@
+ // find me
+ // find me
+ // find me
+-#define MODEL_BURN_SMOKE_UNUSED           0x9C        // burn_smoke_geo - unused & duplicated
++
+ // find me
+ #define MODEL_WHITE_PARTICLE_DL           0x9E        // white_particle_dl
+ #define MODEL_SAND_DUST                   0x9F        // sand_seg3_dl_0302BCD0

@@ -1,0 +1,11 @@
+diff a/src/audio/external.c b/src/audio/external.c	(rejected hunks)
+@@ -312,6 +312,9 @@ u8 sBackgroundMusicDefaultVolume[] = {
+     70,  // SEQ_EVENT_CUTSCENE_ENDING
+     65,  // SEQ_MENU_FILE_SELECT
+     0,   // SEQ_EVENT_CUTSCENE_LAKITU (not in JP)
++    75,
++    65,
++    70,
+ };
+ 
+ STATIC_ASSERT(ARRAY_COUNT(sBackgroundMusicDefaultVolume) == SEQ_COUNT,

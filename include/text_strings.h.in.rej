@@ -1,0 +1,135 @@
+diff a/include/text_strings.h.in b/include/text_strings.h.in	(rejected hunks)
+@@ -3,6 +3,10 @@
+ 
+ #include "text_menu_strings.h"
+ 
++#ifdef EXT_OPTIONS_MENU
++#include "text_options_strings.h"
++#endif
++
+ /**
+  * Global Symbols
+  */
+@@ -23,6 +27,8 @@
+ 
+ // Ingame Menu
+ #define TEXT_PAUSE _("PAUSE") // Pause text, Castle Courses
++#define TEXT_HEALTH_MARIO _("[B] Health: Mario")
++#define TEXT_HEALTH_SONIC _("[B] Health: Sonic")
+ #define TEXT_HUD_CONGRATULATIONS _("CONGRATULATIONS") // Course Complete Text, Bowser Courses
+ 
+ #if defined(VERSION_JP) || defined(VERSION_SH)
+@@ -90,6 +96,7 @@
+ #define TEXT_COURSE _("コース")
+ #define TEXT_MYSCORE _("マイスコア")
+ #define TEXT_CONTINUE _("つづけて　マリオする？")
++#define TEXT_EXIT_GAME _("ゲームをしゅうりょうする")
+ #define TEXT_EXIT_COURSE _("コースからでる？")
+ #define TEXT_CAMERA_ANGLE_R _("Ｒボタンのカメラきりかえ")
+ 
+@@ -107,6 +114,7 @@
+ // Save Options
+ #define TEXT_SAVE_AND_CONTINUE _("セーブしてつづける？")
+ #define TEXT_SAVE_AND_QUIT _("セーブしておわる？")
++#define TEXT_SAVE_EXIT_GAME _("ゲームをやめる？")
+ #define TEXT_CONTINUE_WITHOUT_SAVING _("セーブしないでつづける？")
+ 
+ /**
+@@ -136,10 +144,15 @@
+ #define TEXT_COPY_FILE _("COPY FILE")
+ #define TEXT_ERASE_FILE _("ERASE FILE")
+ #define TEXT_SOUND_SELECT _("SOUND SELECT")
+-#define TEXT_FILE_MARIO_A _("MARIO A")
+-#define TEXT_FILE_MARIO_B _("MARIO B")
+-#define TEXT_FILE_MARIO_C _("MARIO C")
+-#define TEXT_FILE_MARIO_D _("MARIO D")
++#define TEXT_FILE_MARIO_A _("SONIC A")
++#define TEXT_FILE_MARIO_B _("SONIC B")
++#define TEXT_FILE_MARIO_C _("SONIC C")
++#define TEXT_FILE_MARIO_D _("SONIC D")
++
++#define TEXT_MARIO_HEALTH_FILE _("Z HEALTH MARIO")
++#define TEXT_SONIC_HEALTH_FILE _("Z HEALTH SONIC")
++
++
+ 
+ // Menu Options
+ #define TEXT_SCORE _("SCORE")
+@@ -179,7 +192,7 @@
+ #define TEXT_SURE _("SURE?")
+ #define TEXT_YES _("YES")
+ #define TEXT_NO _("NO")
+-#define TEXT_FILE_MARIO_A_JUST_ERASED _("MARIO A JUST ERASED")
++#define TEXT_FILE_MARIO_A_JUST_ERASED _("SONIC A JUST ERASED")
+ 
+ /**
+  * Menus Text (Pause, Course Completed)
+@@ -189,12 +202,13 @@
+ #define TEXT_MYSCORE _("MYSCORE")
+ #define TEXT_CONTINUE _("CONTINUE")
+ #define TEXT_EXIT_COURSE _("EXIT COURSE")
++#define TEXT_EXIT_GAME _("EXIT GAME")
+ #ifndef VERSION_EU // "R" text is different in EU
+ #define TEXT_CAMERA_ANGLE_R _("SET CAMERA ANGLE WITH R")
+ #endif
+ 
+ // Camera Options
+-#define TEXT_LAKITU_MARIO _("LAKITU + MARIO")
++#define TEXT_LAKITU_MARIO _("LAKITU + SONIC")
+ #define TEXT_LAKITU_STOP _("LAKITU + STOP")
+ #define TEXT_NORMAL_UPCLOSE __("(NORMAL)(UP-CLOSE)")
+ #define TEXT_NORMAL_FIXED __("(NORMAL)(FIXED)")
+@@ -207,20 +221,21 @@
+ // Save Options
+ #define TEXT_SAVE_AND_CONTINUE _("SAVE & CONTINUE")
+ #define TEXT_SAVE_AND_QUIT _("SAVE & QUIT")
++#define TEXT_SAVE_EXIT_GAME _("SAVE & EXIT GAME")
+ #define TEXT_CONTINUE_WITHOUT_SAVING _("CONTINUE, DON'T SAVE")
+ 
+ /**
+  * Ending Peach cutscene text.
+  */
+-#define TEXT_FILE_MARIO_EXCLAMATION _("Mario!")
++#define TEXT_FILE_MARIO_EXCLAMATION _("Sonic!")
+ #define TEXT_POWER_STARS_RESTORED __("The power of the Stars is restored to the castle...")
+ #define TEXT_THANKS_TO_YOU __("...and it's all thanks to you!")
+-#define TEXT_THANK_YOU_MARIO __("Thank you, Mario!")
++#define TEXT_THANK_YOU_MARIO __("Thank you, Sonic!")
+ #define TEXT_SOMETHING_SPECIAL __("We have to do something special for you...")
+ #define TEXT_LISTEN_EVERYBODY _("Listen, everybody,")
+ #define TEXT_LETS_HAVE_CAKE _("let's bake a delicious cake...")
+-#define TEXT_FOR_MARIO _("...for Mario...")
+-#define TEXT_FILE_MARIO_QUESTION _("Mario!")
++#define TEXT_FOR_MARIO _("...for Sonic...")
++#define TEXT_FILE_MARIO_QUESTION _("Sonic!")
+ 
+ #endif
+ 
+@@ -333,12 +348,14 @@
+ #define TEXT_MY_SCORE_FR                _("MON SCORE")
+ #define TEXT_CONTINUE_FR                _("CONTINUER")
+ #define TEXT_EXIT_COURSE_FR             _("QUITTER NIVEAU")
++#define TEXT_EXIT_GAME_FR		_("QUITTER JEU")
+ #define TEXT_CAMERA_ANGLE_R_FR          _("RÉGLAGE CAMÉRA AVEC [R]")
+ // German
+ #define TEXT_COURSE_DE                  _("KURS")
+ #define TEXT_MY_SCORE_DE                _("LEISTUNG")
+ #define TEXT_CONTINUE_DE                _("WEITER")
+ #define TEXT_EXIT_COURSE_DE             _("KURS VERLASSEN")
++#define TEXT_EXIT_GAME_DE		_("SPIEL VERLASSEN")
+ #define TEXT_CAMERA_ANGLE_R_DE          _("KAMERA MIT [R] VERSTELLEN")
+ 
+ // Camera Options
+@@ -361,10 +378,12 @@
+ // French
+ #define TEXT_SAVE_AND_CONTINUE_FR       _("SAUVEGARDER & CONTINUER")
+ #define TEXT_SAVE_AND_QUIT_FR           _("SAUVEGARDER & QUITTER")
++#define TEXT_SAVE_EXIT_GAME_FR		_("SAUVEGARDER & QUITTER JEU")
+ #define TEXT_CONTINUE_WITHOUT_SAVING_FR _("CONTINUER SANS SAUVEGARDER")
+ // German
+ #define TEXT_SAVE_AND_CONTINUE_DE       _("SPEICHERN & WEITER")
+ #define TEXT_SAVE_AND_QUIT_DE           _("SPEICHERN & ENDE")
++#define TEXT_SAVE_EXIT_GAME_DE		_("SPEICHERN & SPIEL VERLASSEN")
+ #define TEXT_CONTINUE_WITHOUT_SAVING_DE _("WEITER OHNE ZU SPEICHERN")
+ 
+ /**

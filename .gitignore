@@ -1,0 +1,102 @@
+# Object files
+*.o
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# datadump
+/tools/ddump/*
+
+# Text editor remnants
+*.swp
+.vscode/*
+
+# General project-specific ignores
+doxygen/doxygen/*
+build/*
+*.dump
+*.mio0
+*.z64
+*.map
+.assets-local.txt
+
+# Assets. Generally ignored, but ones with "custom" in the name are fine.
+/levels/**/*.png
+/actors/**/*.png
+/textures/**/*.png
+/assets/**/*.bin
+/sound/**/*.m64
+/sound/**/*.aiff
+!/levels/**/*custom*.png
+!/levels/**/*custom*/**/*.png
+!/actors/**/*custom*.png
+!/actors/**/*rainbow*.png
+!/actors/**/*stored*.png
+!/actors/**/*mario*.png
+!/levels/intro/header.h
+!/levels/intro/leveldata.c
+!/levels/intro/leveldata.c
+!/levels/intro/script.c
+!/levels/ending/*cake*.png
+!/levels/menu/*01018*.png
+!/actors/**/*wing*.png
+!/actors/**/*cursya*.png
+!/actors/**/*skipsqueak*.png
+!/actors/**/*sonic*.png
+!/actors/**/*metal*.png
+!/actors/**/*super*.png
+!/actors/**/*reticle*.png
+!/sound/**/*sound*.png
+!/textures/**/*10458*.png
+!/textures/**/*05A00*.png
+!/actors/**/*custom*/**/*.png
+!/actors/**/*emerald*.png
+!/textures/**/*meta*.png
+!/textures/**/*emerald*.png
+!/sound/**/*drown*.m64
+!/sound/**/*super*.m64
+!/sound/**/*emerald*.m64
+!/textures/**/*mario*.png
+!/textures/**/*custom*.png
+!/textures/**/*rainbow*.png
+!/textures/**/*cursya*.png
+!/textures/**/*skipsqueak*.png
+!/textures/**/*curseya*.png
+!/textures/**/*custom*/**/*.png
+!/sound/**/*custom*.m64
+!/sound/**/*custom*/**/*.m64
+!/sound/**/*custom*.aiff
+!/sound/**/*custom*/**/*.aiff
+!/assets/**/*custom*.bin
+!/assets/**/*custom*/**/*.bin

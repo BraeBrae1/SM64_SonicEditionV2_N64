@@ -1,0 +1,10 @@
+diff a/src/game/sound_init.c b/src/game/sound_init.c	(rejected hunks)
+@@ -184,7 +184,7 @@ void play_menu_sounds(s16 soundMenuFlags) {
+ void play_painting_eject_sound(void) {
+     if (gRipplingPainting != NULL && gRipplingPainting->state == PAINTING_ENTERED) {
+         // ripple when Mario enters painting
+-        if (!sPaintingEjectSoundPlayed) {
++        if (sPaintingEjectSoundPlayed == FALSE) {
+             play_sound(SOUND_GENERAL_PAINTING_EJECT,
+                        gMarioStates[0].marioObj->header.gfx.cameraToObject);
+         }

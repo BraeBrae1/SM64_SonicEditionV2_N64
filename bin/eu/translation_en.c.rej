@@ -1,0 +1,9 @@
+diff a/bin/eu/translation_en.c b/bin/eu/translation_en.c	(rejected hunks)
+@@ -1,7 +1,5 @@
+ // SM64 (EU) Segment 19 - English
+ 
+-#include "macros.h"
+-
+ #include "game/ingame_menu.h"
+ 
+ #include "make_const_nonconst.h"

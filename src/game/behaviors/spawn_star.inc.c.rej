@@ -1,0 +1,10 @@
+diff a/src/game/behaviors/spawn_star.inc.c b/src/game/behaviors/spawn_star.inc.c	(rejected hunks)
+@@ -15,6 +15,8 @@ static struct ObjectHitbox sCollectStarHitbox = {
+ void bhv_collect_star_init(void) {
+     s8 starId;
+     u8 currentLevelStarFlags;
++    
++
+ 
+     starId = (o->oBehParams >> 24) & 0xFF;
+     currentLevelStarFlags = save_file_get_star_flags(gCurrSaveFileNum - 1, gCurrCourseNum - 1);

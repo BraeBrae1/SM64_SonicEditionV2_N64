@@ -1,0 +1,16 @@
+diff a/include/object_fields.h b/include/object_fields.h	(rejected hunks)
+@@ -164,6 +164,8 @@
+ #define /*0x110*/ oMarioLongJumpIsSlow   OBJECT_FIELD_S32(0x22)
+ #define /*0x110*/ oMarioSteepJumpYaw     OBJECT_FIELD_S32(0x22)
+ #define /*0x110*/ oMarioWalkingPitch     OBJECT_FIELD_S32(0x22)
++#define /*0x110*/ oSuperTimer    OBJECT_FIELD_S32(0x1E)  
++
+ 
+ /* 1-Up Hidden */
+ #define /*0x0F4*/ o1UpHiddenUnkF4 OBJECT_FIELD_S32(0x1B)
+@@ -1157,4 +1159,5 @@
+ #define /*0x0FC*/ oYoshiChosenHome OBJECT_FIELD_S32(0x1D)
+ #define /*0x100*/ oYoshiTargetYaw  OBJECT_FIELD_S32(0x1E)
+ 
++
+ #endif // OBJECT_FIELDS_H

@@ -1,0 +1,20 @@
+diff a/src/game/behavior_actions.h b/src/game/behavior_actions.h	(rejected hunks)
+@@ -3,6 +3,7 @@
+ 
+ void spawn_mist_particles_variable(s32 count, s32 offsetY, f32 size);
+ void bhv_spawn_star_no_level_exit(u32);
++void bhv_spawn_emerald_no_level_exit(u32 sp20, u32 col);
+ void bhv_star_door_loop_2(void);
+ void spawn_triangle_break_particles(s16 numTris, s16 triModel, f32 triSize, s16 triAnimState);
+ 
+@@ -551,6 +552,10 @@ void bhv_intro_scene_loop(void);
+ void bhv_dust_smoke_loop(void);
+ void bhv_yoshi_loop(void);
+ void bhv_volcano_trap_loop(void);
++void bhv_reticle_init(void);
++void bhv_reticle_update(void);
++void bhv_emerald_circle_init(void);
++void bhv_emerald_circle_loop(void);
+ 
+ Gfx *geo_move_mario_part_from_parent(s32 run, UNUSED struct GraphNode *node, Mat4 mtx);
+ 

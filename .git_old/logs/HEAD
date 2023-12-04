@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 1372ae1bb7cbedc03df366393188f4f05dcfc422 Gamebunn <gerardobarrer@gmail.com> 1643768990 -0600	clone: from https://github.com/n64decomp/sm64.git
+1372ae1bb7cbedc03df366393188f4f05dcfc422 6d87c424b87fe8c1baaf8dcf09412adf7116b30f Gamebunn <gerardobarrer@gmail.com> 1643769022 -0600	checkout: moving from master to 6d87c424b87fe8c1baaf8dcf09412adf7116b30f
+6d87c424b87fe8c1baaf8dcf09412adf7116b30f 28936efd3e18ff8d70e029075b5b1a5fdf58a824 Gamebunn <gerardobarrer@gmail.com> 1648160523 -0500	commit: Added the last of the new models to old build. Everything currently works.
+28936efd3e18ff8d70e029075b5b1a5fdf58a824 56ede14fad3380eeea1ef5a7e4b94eaa2603a46d Gamebunn <gerardobarrer@gmail.com> 1648259103 -0500	commit: Adding one new streaming audio track, preparing to add more
+56ede14fad3380eeea1ef5a7e4b94eaa2603a46d e92244063a632fa4d79f9d0ff49a4f8b1e360431 Gamebunn <gerardobarrer@gmail.com> 1648342880 -0500	commit: Added new Castle, Starget, Star spawn, Eggman1 and Credits/menu theme
+e92244063a632fa4d79f9d0ff49a4f8b1e360431 a432573a268e7b347a1785ee9df9ce5a2ff817c0 Gamebunn <gerardobarrer@gmail.com> 1648353533 -0500	commit: added vsMetal, newboss, and eggman 3
+a432573a268e7b347a1785ee9df9ce5a2ff817c0 7594075654af6c14708417420a3387d6bd1d2620 Gamebunn <gerardobarrer@gmail.com> 1648356734 -0500	commit: Added eggman3 music
+7594075654af6c14708417420a3387d6bd1d2620 7f8feda68c880551d5923a93cd57d5fc71a58e45 Gamebunn <gerardobarrer@gmail.com> 1648515526 -0500	commit: Added several new songs, no hard locks reported yet
+7f8feda68c880551d5923a93cd57d5fc71a58e45 7131bbb53949e08a3a51216671d7e560080f6a39 Gamebunn <gerardobarrer@gmail.com> 1648523796 -0500	commit: Added new LLL song, before adding LLL2 song
+7131bbb53949e08a3a51216671d7e560080f6a39 ac3e705bb7d9fb38d58edb48b7c3012878bf0361 Gamebunn <gerardobarrer@gmail.com> 1648602547 -0500	commit: before adding in new titlescreen
+ac3e705bb7d9fb38d58edb48b7c3012878bf0361 b03e7ca39761f839f636eb20c1c5a56cc416579b Gamebunn <gerardobarrer@gmail.com> 1648615060 -0500	commit: Added Wisp model locations in the levels
+b03e7ca39761f839f636eb20c1c5a56cc416579b 159cef5c4e2b3d7d04e7e9222601b50b69689ed2 Gamebunn <gerardobarrer@gmail.com> 1701731411 -0600	commit: finalized code and assets
+159cef5c4e2b3d7d04e7e9222601b50b69689ed2 1634d143dd7c870af666efb0d22fd9af55df35cc Gamebunn <gerardobarrer@gmail.com> 1701732040 -0600	revert: Revert "finalized code and assets"

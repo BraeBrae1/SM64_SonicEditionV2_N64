@@ -1,3 +1,7 @@
+# Super Mario 64 Sonic Edition Plus
+
+A Sonic conversion mod for Super Mario 64 starring Sonic complete with his various movesets such as spin jump, spin dash and that crazy speed. Original [Sonic Edition 4.0](https://youtu.be/wWJO21D72ZY) mod by TheThodds with other assets and music from Super Cream 64 added in by Gamebun. 
+
 # Super Mario 64
 
 - This repo contains a full decompilation of Super Mario 64 (J), (U), and (E).

@@ -105,11 +105,6 @@
             "envelope": "envelope0",
             "sound": "bob_springvalley_0" 
         },
-        "inst1": {
-            "release_rate": 10,
-            "envelope": "envelope1",
-            "sound": "castle_schoolhouse_0"
-        },
         "inst2": {
             "release_rate": 10,
             "envelope": "envelope2",
@@ -183,7 +178,7 @@
     },
     "instrument_list": [
         "inst0",
-        "inst1",
+        null,
         "inst2",
         "inst3",
         "inst4",

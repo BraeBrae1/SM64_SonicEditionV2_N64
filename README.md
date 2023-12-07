@@ -2,7 +2,7 @@
 
 A Sonic conversion mod for Super Mario 64 starring Sonic complete with his various movesets such as spin jump, spin dash and that crazy speed. Original [Sonic Edition 4.0](https://youtu.be/wWJO21D72ZY) mod by Thodds with other assets and music from Super Cream 64 added in by Gamebun. 
 
-Extra files needed to complete compile: https://drive.google.com/file/d/1iErTlirakdzinteMNTD8JXu0IIAg9PTz/view?usp=drive_link
+Extra files needed to complete compile: https://drive.google.com/file/d/1aUE-uYXdRwnLig1hFE1-bu_559jifd9s/view?usp=drive_link
 
 # Super Mario 64
 
